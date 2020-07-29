@@ -42,8 +42,8 @@ a = credentials(CID, CS, UN, PW, POST_ID)
 
 try:
     while 1:
-        time.sleep(5)
         for credential_object in credential_list:
             credential_object.post(".")
+        time.sleep(5)
 except KeyboardInterrupt:
     exit()
